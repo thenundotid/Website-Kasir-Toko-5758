@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Kasir Toko 5758</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- SheetJS -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Kasir Toko 5758</h1>
+
+    <h3>Input Barang</h3>
+    <input id="kodeBarang" placeholder="Kode Barang">
+    <input id="namaBarang" placeholder="Nama Barang">
+    <input id="hargaBarang" type="number" placeholder="Harga">
+    <input id="stokBarang" type="number" placeholder="Stok Awal (Minimal 50)">
+    <button class="btn-add" onclick="tambahBarang()">Tambah Barang</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Kode</th>
+                <th>Nama</th>
+                <th>Harga</th>
+                <th>Stok</th>
+                <th>Restock Terakhir</th>
+                <th>Jual Terakhir</th>
+                <th>Total Penjualan</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="dataBarang"></tbody>
+    </table>
+
+    <button class="btn-excel" onclick="downloadExcel()">Download Excel</button>
+</div>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>

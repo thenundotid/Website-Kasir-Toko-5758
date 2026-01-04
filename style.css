@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    margin: 2px;
+}
+
+.btn-add {
+    background: #007bff;
+}
+
+.btn-restock {
+    background: green;
+}
+
+.btn-sell {
+    background: orange;
+}
+
+.btn-delete {
+    background: red;
+}
+
+.btn-excel {
+    background: darkgreen;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+}
+
+.stok-warning {
+    background-color: #ffe0e0;
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
